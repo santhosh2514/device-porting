@@ -16,7 +16,7 @@ const Signup = () => {
             Cookies.set('nickname', nickname);
             const response = await axios({
                 method: 'post',
-                url: 'http://localhost:2000/api/user/createUserData',
+                url: 'https://port-server.herokuapp.com/api/user/createUserData',
                 data: {
                     nickname,
                     uniqueIdentifier
