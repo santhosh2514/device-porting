@@ -38,7 +38,7 @@ const Home = () => {
     }
 
     const conversationTemplate = (convo) => {
-        const emoji = convo.from === 'wysa' ? "🐧" : "😃";
+        const emoji = convo.from === 'bot' ? "🤖" : "😃";
         return (
             <div style={{ marginBottom: '20px' }}>
                 <Row>

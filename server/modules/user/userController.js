@@ -16,7 +16,7 @@ const createUserData = async (req, res) => {
       await Conversation.create({
         userId: data._id,
         conversation: [{
-          from: "wysa",
+          from: "bot",
           body: `Hi ${data.name},How was your day`,
           dateTime: new Date()
         }, {
@@ -25,7 +25,7 @@ const createUserData = async (req, res) => {
           type: "Happy",
           dateTime: new Date()
         }, {
-          from: "wysa",
+          from: "bot",
           body: "Thats amazing",
           dateTime: new Date()
         }]
